@@ -12,5 +12,11 @@
             "email": "sergio.zambrano@gmail.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Kata\\Test\\": "tests/",
+            "Kata\\Main\\": "src/"
+        }
+    }
 }

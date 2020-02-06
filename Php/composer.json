@@ -1,0 +1,16 @@
+{
+    "name": "skilla/kataphp",
+    "description": "a template to start making a kata with PHP and PhpUnit",
+    "type": "project",
+    "require-dev": {
+        "phpunit/phpunit": "^8.5"
+    },
+    "license": "GNU",
+    "authors": [
+        {
+            "name": "Sergio Zambrano",
+            "email": "sergio.zambrano@gmail.com"
+        }
+    ],
+    "require": {}
+}

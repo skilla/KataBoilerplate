@@ -1,0 +1,11 @@
+.idea/
+
+Php/vendor/
+Php/.phpunit.result.cache
+Php/composer.lock
+
+
+JavaScript/dist/*
+JavaScript/node_modules/*
+JavaScript/yarn-error.log
+JavaScript/yarn.lock

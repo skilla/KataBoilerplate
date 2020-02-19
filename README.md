@@ -16,7 +16,8 @@ yarn add @babel/preset-react --dev
 
 
 
-
+Java
+mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=RELEASE -DgroupId=es.enalquiler.kata -DartifactId=KataTemplate
 
 
 

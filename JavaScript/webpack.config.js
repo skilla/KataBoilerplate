@@ -1,8 +1,12 @@
+const path = require('path');
+
 module.exports = {
-    entry: './src/app.js',
+    entry: {
+        leches: './src/app.js'
+    },
     output: {
-        path: '/Users/sergio.zambrano/workspace/php/formacion/KataTemplate/JavaScript/dist/',
-        filename: 'bundle.js'
+        path: path.resolve(__dirname, 'dist'),
+        filename: '[name].bundle.js'
     },
     mode: 'development',
     module: {
@@ -22,4 +26,4 @@ module.exports = {
             }
         ]
     }
-}
+};

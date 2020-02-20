@@ -2,6 +2,7 @@
   "dependencies": {
     "@babel/core": "^7.8.4",
     "@babel/preset-env": "^7.8.4",
+    "@babel/preset-typescript": "^7.8.3",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.4.2",
     "jest": "^25.1.0",
@@ -20,17 +21,11 @@
   "devDependencies": {},
   "scripts": {
     "build": "node_modules/.bin/webpack --mode=development --entry=./src/app.js --output=./dist/bundle.js",
-    "test": "node_modules/.bin/jest"
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "description": "",
-  "private": true,
-  "jest": {
-    "moduleNameMapper": {
-      "//.css$": "./test/cssMock.js"
-    },
-    "testRegex": "/tests/(.*/)?[a-zA-Z0-9_\\-]+\\.(test|spec)\\.[jt]sx?$"
-  }
+  "private": true
 }

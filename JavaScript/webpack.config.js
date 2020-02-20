@@ -16,14 +16,30 @@ module.exports = {
                 loader: 'style-loader!css-loader'
             },
             {
-                test: /\.ts$/,
-                loader: 'ts-loader'
+                test: /\.(js|es)$/,
+                exclude: /node_modules/,
+                loader: "babel-loader",
             },
             {
-                test: /\.js$/,
+                test: /\.(ts)$/,
                 exclude: /node_modules/,
-                loader: "babel-loader"
+                loader: "ts-loader"
             }
         ]
+    },
+    target: 'web',
+    resolve: {
+        extensions: [
+            '.js',
+            '.es',
+            '.ts',
+            '.jsx'
+        ],
+        alias: {
+            root: path.resolve(__dirname, 'src')
+        }
+    },
+    stats: {
+        colors: true
     }
 };

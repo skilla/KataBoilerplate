@@ -1,14 +1,5 @@
 {
   "dependencies": {
-    "webpack": "^4.41.5"
-  },
-  "name": "JavaScript",
-  "version": "1.0.0",
-  "main": "KataJavaScript",
-  "directories": {
-    "test": "tests"
-  },
-  "devDependencies": {
     "@babel/core": "^7.8.4",
     "@babel/preset-env": "^7.8.4",
     "babel-loader": "^8.0.6",
@@ -16,8 +7,17 @@
     "jest": "^25.1.0",
     "style-loader": "^1.1.3",
     "ts-loader": "^6.2.1",
-    "webpack-cli": "^3.3.10"
+    "typescript": "^3.7.5",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11"
   },
+  "name": "JavaScript",
+  "version": "1.0.0",
+  "main": "KataJavaScript",
+  "directories": {
+    "test": "tests"
+  },
+  "devDependencies": {},
   "scripts": {
     "build": "node_modules/.bin/webpack --mode=development --entry=./src/app.js --output=./dist/bundle.js",
     "test": "node_modules/.bin/jest"

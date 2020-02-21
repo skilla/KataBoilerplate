@@ -19,6 +19,6 @@ class Calculator {
     divide(firstNumber, secondNumber) {
         return firstNumber / secondNumber;
     }
-};
+}
 
 export { Calculator };

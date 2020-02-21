@@ -1,13 +1,32 @@
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
 module.exports = {
+    resolve: {
+        extensions: [
+            '.js',
+            '.es',
+            '.ts',
+            '.jsx',
+            '.html'
+        ],
+        alias: {
+            '@': path.resolve(__dirname, 'src')
+        }
+    },
     entry: {
-        leches: './src/app.js'
+        app: './src/App.js'
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: '[name].bundle.js'
     },
+    plugins: [
+        new HtmlWebpackPlugin({
+            filename: path.resolve(__dirname, 'dist', 'kata.html'),
+            template: path.resolve(__dirname, 'src', 'index.html')
+        })
+    ],
     mode: 'development',
     module: {
         rules: [
@@ -28,17 +47,6 @@ module.exports = {
         ]
     },
     target: 'web',
-    resolve: {
-        extensions: [
-            '.js',
-            '.es',
-            '.ts',
-            '.jsx'
-        ],
-        alias: {
-            root: path.resolve(__dirname, 'src')
-        }
-    },
     stats: {
         colors: true
     }

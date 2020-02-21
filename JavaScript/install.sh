@@ -12,7 +12,9 @@ docker run -it --rm --name node -v "$PWD":/usr/src/app -w /usr/src/app nodeforka
     @babel/preset-env \
     @babel/preset-typescript \
     babel-loader \
+    babel-plugin-module-resolver \
     css-loader \
+    html-webpack-plugin \
     jest \
     style-loader \
     ts-loader \

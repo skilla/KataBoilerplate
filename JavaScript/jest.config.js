@@ -12,7 +12,7 @@ module.exports = {
     },
     testEnvironment: 'node',
     moduleNameMapper: {
-        '^@/(.*)$': '<rootDir>/$1'
+        '^root/(.*)$': '<rootDir>/src/$1'
     },
     testMatch: [
         '<rootDir>/tests/**/*.(test|spec).(js|jsx|ts|tsx)'

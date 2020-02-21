@@ -1,4 +1,4 @@
-const operations = require('../src/mathOperations');
+const operations = require('root/mathOperations');
 
 describe('Test Math Operations', () => {
     test('sum         => 1 + 2 is 3', () => {

@@ -41,7 +41,7 @@ mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -Darchetyp
   "main": "src/bundle.js",
   "license": "MIT",
   "scripts": {
-    "build": "node_modules/.bin/webpack --mode=development --entry=./src/app.js --output=./dist/bundle.js",
+    "build": "node_modules/.bin/webpack --mode=development --entry=./src/App.js --output=./dist/bundle.js",
     "test": "node_modules/.bin/jest"
   },
   "keywords": [],

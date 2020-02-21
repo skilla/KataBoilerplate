@@ -1,6 +1,6 @@
 'use strict'
 
-import { Calculator } from '../src/Calculator';
+import { Calculator } from 'root/Calculator';
 
 describe('Test Math Operations', () => {
     test('sum         => 1 + 2 is 3', () => {

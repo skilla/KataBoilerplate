@@ -9,5 +9,14 @@ module.exports = {
             }
         ],
         '@babel/preset-typescript',
+    ],
+    plugins: [
+        ["module-resolver", {
+            root: ["./src"],
+            alias: {
+                root: "./src",
+                test: "./tests"
+            }
+        }]
     ]
 };

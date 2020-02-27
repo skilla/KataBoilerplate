@@ -3,7 +3,7 @@
     "description": "a template to start making a kata with PHP and PhpUnit",
     "type": "project",
     "require-dev": {
-        "phpunit/phpunit": "^8.5"
+        "phpunit/phpunit": "^9.0"
     },
     "license": "GNU",
     "authors": [
@@ -18,5 +18,12 @@
             "Kata\\Test\\": "tests/",
             "Kata\\Main\\": "src/"
         }
+    },
+    "config": {
+        "preferred-install": {
+            "*": "dist"
+        },
+        "bindir": "bin",
+        "sort-packages": true
     }
 }

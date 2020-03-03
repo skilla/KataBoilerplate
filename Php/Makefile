@@ -36,8 +36,8 @@ help:
 install:
 	docker pull php:7.4-fpm
 	docker build -t phpforkatas:latest .
-	docker run -it --rm --name php4Katas -v "$PWD":/var/www/html -w /var/www/html -p 8080:80 phpforkatas composer require phpunit/phpunit --dev
+	docker run -it --rm --name php4katas -v "$PWD":/var/www/html -w /var/www/html -p 8080:80 phpforkatas composer require phpunit/phpunit --dev
 
 run:
-	docker run -it --rm --name php4Katas -v "$PWD":/var/www/html -w /var/www/html -p 8080:80 phpforkatas apache2ctl -D FOREGROUND
+	docker run -it --rm --name php4katas -v "$PWD":/var/www/html -w /var/www/html -p 8080:80 phpforkatas apache2ctl -D FOREGROUND
 

@@ -22,7 +22,7 @@ describe('Test Main Application', () => {
         jest.resetModules();
     })
 
-    test('Display the operation sum after run', () => {
+    test('Display the operation multiply after run', () => {
 
         document.head.innerHTML = '<title>Test</title>';
         document.body.innerHTML = '<div id="wrapper"></div>';
